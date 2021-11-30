@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Currículo</title>
+</head>
+
+<body>
+  <h1>Formulário para preenchimento de currículo</h1>
+  <form action="" method="get" enctype="multipart/form-data">
+    <fieldset>
+      <label for="nome-completo">Nome Completo
+        <input type="text" id="nome-completo" name="nome" placeholder="Digite seu nome" maxlength="40" required>
+      </label><br><br>
+      <label for="entrada-email">Email
+        <input type="email" id="entrada-email" name="email" placeholder="Digite seu email" maxlength="50" required>
+      </label><br><br>
+      <label for="entrada-cpf">CPF
+        <input type="number" id="entrada-cpf" name="cpf" placeholder="Digite seu cpf" maxlength="11" required>
+      </label><br><br>
+      <label for="entrada-endereco">Endereço
+        <input type="text" id="entrada-endereco" name="endereco" placeholder="Digite seu endereço" maxlength="200" required>
+      </label><br><br>
+      <label for="entrada-cidade">Cidade
+        <input type="text" id="entrada-cidade" name="cidade" placeholder="Digite sua cidade" maxlength="28" required>
+      </label><br><br>
+      <label for="entrada-estado">Estado
+        <select name="estado" id="entrada-estado" required>
+        <option value=""></option>
+      </select> 
+      </label><br><br>
+    </fieldset>
+
+    <fieldset>
+      <p>Dados do seu último emprego</p>
+      <textarea name="resumo-do-curriculo" id="textarea-curriculo" cols="50" rows="25" maxlength="1000" placeholder="Descreva resumidamente sobre seu último emprego" ></textarea><br><br>
+      <label for="cargo">Cargo
+        <input type="text" id="cargo" name="ultimo-cargo" placeholder="Digite seu último cargo" maxlength="40" required>
+      </label><br><br>
+      <label for="descricao-cargo">Descrição do cargo
+        <input type="text" id="descricao-cargo" name="descricao-do-cargo" placeholder="Descreva funções exercidas" maxlength="500" required>
+      </label><br><br>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
